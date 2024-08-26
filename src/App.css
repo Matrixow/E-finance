@@ -28,6 +28,43 @@
   color: #61dafb;
 }
 
+.Usercont{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#mepic{
+  padding: 4%;
+}
+
+.menu-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 3%;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.menu-bottom .menu-item{
+  padding: 3%;
+}
+
+.Uinfo{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 2%;
+}
+
+.Uinfo h1, .Uinfo p{
+  margin: 0.8%;
+  text-align: justify;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
