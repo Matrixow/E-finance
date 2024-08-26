@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="Usercont">
       <UserInfo username="matrix" name="Ernest Ampem"/>
-      <Image src="logo.svg"/>
+      <Image/>
       </div>
       <Menu/>
     </>

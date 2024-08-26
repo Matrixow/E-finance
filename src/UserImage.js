@@ -1,5 +1,6 @@
-export default function Image(props){
+import logo from './logo.svg'
+export default function Image(){
     return(
-        <img id="mepic" src={props.src} alt="User"></img>
+        <img id="mepic" src={logo} alt="User"></img>
     )
 }
