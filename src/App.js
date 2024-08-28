@@ -1,7 +1,9 @@
 import './App.css';
-import UserInfo from './Uinfo';
-import Menu from './Menu';
-import Image from './UserImage';
+import UserInfo from './models/Uinfo';
+import Menu from './models/Menu';
+import Image from './models/UserImage';
+import Savings from './models/Savings';
+import Budget from './models/Budget';
 
 function App() {
   return (
@@ -10,6 +12,16 @@ function App() {
       <UserInfo username="matrix" name="Ernest Ampem"/>
       <Image/>
       </div>
+
+      <div className="Section1">
+        <Savings/>
+        <Budget/>
+      </div>
+      
+      <div className="Section2">
+        
+      </div>
+
       <Menu/>
     </>
   );
