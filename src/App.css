@@ -123,6 +123,21 @@ div#availablesection .available p{
 
 }
 
+hr{
+  text-align: center;
+  width: 88%;
+  color: #ccc
+}
+
+input{
+  width: 80%;
+  border: 0.3px #ccc;
+  box-sizing: border-box;
+}
+
+input:active{
+  border: 0.7px rgb(0, 157, 0);
+}
 
 
 #root > div.Section1 > div:nth-child(1) > svg{

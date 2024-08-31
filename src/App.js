@@ -5,6 +5,7 @@ import Image from './models/UserImage';
 import Savings from './models/Savings';
 import Budget from './models/Budget';
 import Moneyavailable from './models/Moneyavailable';
+import Calculator from './models/Savingscalculator';
 
 function App() {
   const sources = [{
@@ -28,10 +29,14 @@ function App() {
         <Savings/>
         <Budget/>
       </div>
+      <hr/>
       
       <div className="Section2">
       <Moneyavailable sources={sources}/>
       </div>
+      <hr/>
+
+      <Calculator/>
 
       <Menu/>
     </>
