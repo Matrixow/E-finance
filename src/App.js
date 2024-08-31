@@ -4,8 +4,14 @@ import Menu from './models/Menu';
 import Image from './models/UserImage';
 import Savings from './models/Savings';
 import Budget from './models/Budget';
+import Moneyavailable from './models/Moneyavailable';
 
 function App() {
+  const sources = [{
+    name: "Source1",
+    availablemoney: 600,
+    location: "Unknown"
+  }]
   return (
     <>
       <div className="Usercont">
@@ -19,7 +25,7 @@ function App() {
       </div>
       
       <div className="Section2">
-        
+      <Moneyavailable sources={sources}/>
       </div>
 
       <Menu/>
