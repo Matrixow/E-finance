@@ -11,7 +11,12 @@ function App() {
     name: "Source1",
     availablemoney: 600,
     location: "Unknown"
-  }]
+  }, 
+  {name: "Savings", availablemoney: 700, location:"In my wallet", key:1},
+  {name: "Savings", availablemoney: 700, location:"In my wallet", key:2},
+  {name: "Savings", availablemoney: 700, location:"In my wallet", key:3},
+  {name: "Savings", availablemoney: 700, location:"In my wallet", key:4},
+  {name: "Savings", availablemoney: 700, location:"In my wallet", key:5}]
   return (
     <>
       <div className="Usercont">

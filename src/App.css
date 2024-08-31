@@ -71,6 +71,7 @@
 .Section1{
   display: flex;
   flex-direction: row;
+  flex-wrap:wrap;
   justify-content: space-around;
   margin: 1%;
   margin-top: 5%;
@@ -102,17 +103,24 @@ div#availablesection{
   margin-top:10%;
   display:flex;
   justify-content: space-around;
-  flex-grow: wrap;
+  flex-wrap: wrap;
   justify-content: row;
+}
+
+div#availablesection h3{
+width: 100%;
 }
 
 div#availablesection .available{
   font-size: x-small;
   padding: 1%;
+  margin: 2%;
 }
 
 div#availablesection .available p{
-  
+  text-align: center;
+  margin: 3px;
+
 }
 
 
