@@ -30,15 +30,20 @@
 }
 
 .Usercont{
+  position: fixed;
+  width: 100%;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  z-index: 10;
 }
 
 #mepic{
   padding: 4%;
   width: 80px;
   height: 50px;
+  animation: App-logo-spin;
 }
 
 .menu-bottom{
@@ -49,6 +54,7 @@
   padding: 3%;
   justify-content: space-evenly;
   flex-direction: row;
+  z-index: 10;
 }
 
 .menu-bottom .menu-item{
@@ -74,7 +80,7 @@
   flex-wrap:wrap;
   justify-content: space-around;
   margin: 1%;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 100%;
   max-height: 400px;
 }
@@ -129,15 +135,38 @@ hr{
   color: #ccc
 }
 
-input{
-  width: 80%;
-  border: 0.3px #ccc;
-  box-sizing: border-box;
+#calculator{
+  padding: 3%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 25%;
 }
 
-input:active{
-  border: 0.7px rgb(0, 157, 0);
+#calculator h5{
+  font-size: x-small;
 }
+
+#calculator input{
+  width: 80%;
+  height: 30px;
+  border: 1px ridge #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 3px;
+}
+
+#calculator p{
+  font-weight:bold;
+  font-style: oblique;
+}
+
+#calculator input:hover{
+  border: 1.8px solid rgb(0, 157, 0);
+
+}
+
 
 
 #root > div.Section1 > div:nth-child(1) > svg{
@@ -154,4 +183,10 @@ input:active{
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width:400px)  {
+    .Section1{
+      margin-top: 23%;
+    }
 }
