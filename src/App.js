@@ -1,6 +1,6 @@
 import './App.css';
 import Budget from './pages/Budget';
-import Home from './models/Home';
+import Home from './components/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
