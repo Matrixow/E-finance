@@ -32,11 +32,14 @@
 .Usercont{
   position: fixed;
   width: 100%;
+  height: 18%;
   top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   z-index: 10;
+  background: rgba(245, 245, 245, 0.394);
+
 }
 
 #mepic{
@@ -51,14 +54,22 @@
   bottom: 0;
   width: 100%;
   display: flex;
-  padding: 3%;
+  padding: 0.3%;
   justify-content: space-evenly;
   flex-direction: row;
   z-index: 10;
+  background: dodgerblue;
 }
 
 .menu-bottom .menu-item{
-  padding: 3%;
+  padding: 2%;
+  color: whitesmoke;
+}
+
+.menu-item:hover{
+  background: rgba(194, 224, 255, 0.389);
+  border: 0.7px solid #ccc;
+  cursor: pointer;
 }
 
 .Uinfo{
@@ -66,7 +77,9 @@
   display: flex;
   flex-direction: column;
   width: 70%;
-  padding: 2%;
+  padding: 1.5%;
+  color: dodgerblue;
+
 }
 
 .Uinfo h1, .Uinfo p{
@@ -79,15 +92,19 @@
   flex-direction: row;
   flex-wrap:wrap;
   justify-content: space-around;
-  margin: 1%;
+  margin: 0.5%;
   margin-top: 10%;
-  width: 100%;
+  width: 99%;
   max-height: 400px;
+  background: rgba(255, 186, 68, 0.9);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .Section h1,  .Section h4{
   font-size: 2vh;
   font-variant: small-caps;
+  color: rgb(82, 0, 82);
 }
 
 .Section h4{
@@ -96,7 +113,29 @@
 
 .Section p{
   font-size: 1.3vh;
+  color: whitesmoke;
   margin: 1px;
+}
+
+.Section2{
+  margin: 0.5%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: greenyellow;
+}
+
+.Section2 button{
+  padding: 1.2%;
+  border-radius: 5px;
+  border: 0.2px #ccc solid;
+  color: whitesmoke;
+  background: rgba(49, 30, 255, 0.86);
+  font-weight: bolder;
+}
+
+#availablesection > div{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #savingsection{
@@ -115,6 +154,7 @@ div#availablesection{
 
 div#availablesection h3{
 width: 100%;
+color: rgb(82, 0, 82);
 }
 
 div#availablesection .available{
@@ -144,8 +184,13 @@ hr{
   margin-bottom: 25%;
 }
 
+#calculator h3{
+  color: rgb(82, 0, 82);
+}
+
 #calculator h5{
   font-size: x-small;
+  color: lime;
 }
 
 #calculator input{
@@ -160,6 +205,7 @@ hr{
 #calculator p{
   font-weight:bold;
   font-style: oblique;
+  color: limegreen;
 }
 
 #calculator input:hover{
@@ -188,5 +234,9 @@ hr{
 @media screen and (max-width:400px)  {
     .Section1{
       margin-top: 23%;
+    }
+
+    .Usercont{
+      height: 10%;
     }
 }
