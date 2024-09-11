@@ -11,7 +11,6 @@ export default function Budget(){
         let save = document.querySelector("#save") 
         let spend = document.querySelector("#spend")        
 
-        console.log(save.value - spend.value)
         setSavings(save.value - spend.value)
 
     }

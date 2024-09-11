@@ -14,7 +14,7 @@ export default function Menu(){
     return(
         <div className="menu-bottom">
             <div className="menu-item" onClick={handleClick}>Home</div>
-            <div className="menu-item">Savings</div>
+            <div className="menu-item" onClick={handleClick}>Savings</div>
             <div className="menu-item" onClick={handleClick}>Budget</div>
 
         </div>
