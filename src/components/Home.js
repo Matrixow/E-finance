@@ -41,7 +41,7 @@ export default function Home(){
     return (
 
 
-        <>
+        <div>
       <div className="Usercont">
       <UserInfo username={username || "Username"} name={name || "Fullname"}/>
       <Image/>
@@ -61,6 +61,6 @@ export default function Home(){
       <Calculator/>
 
       <Menu/>
-    </>
+    </div>
     )
 }

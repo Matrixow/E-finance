@@ -40,9 +40,16 @@ export default function Moneyavailable() {
         }));
     };
 
+    const deleteSources = ()=>{
+        localStorage.removeItem("financeSources")
+        alert("Sources cleared, reload for changes to take effect")
+    }
+
     return (
         <div id="availablesection">
+
             <h3>Finance Sources</h3>
+            
             {sources.map((source) => (
                 <div className="available" key={source.key}>
                     <h4>{source.name}</h4>
@@ -52,7 +59,10 @@ export default function Moneyavailable() {
             ))}
 
             {!showPopup && (
+                <div id='sourcebuttons'>
+                <button id='del' onClick={deleteSources}>Delete sources</button>
                 <button onClick={() => setShowPopup(true)}>Add source</button>
+                </div>
             )}
 
             {showPopup && (
